@@ -1,0 +1,18 @@
+<p>posts-list works!</p>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>username</th>
+    <th>password</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let post of posts">
+    <th>{{post.id}}</th>
+    <th>{{post.username}}</th>
+    <th>{{post.password}}</th>
+  </tr>
+  </tbody>
+</table>
