@@ -1,0 +1,20 @@
+<div class="container"  >
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">jmeno / email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users" >
+      <td>{{user.id}}</td>
+      <td>{{user.username}}</td>
+      <button class="btn" (click)="detail(user.id)">Detaily</button>
+
+      <button class="btn" (click)="delete(user.id)">Smaz</button>
+    </tr>
+
+    </tbody>
+  </table>
+</div>

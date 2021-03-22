@@ -1,0 +1,24 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<form action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <h1>Register</h1>
+  </div>
+
+  <div class="container">
+    <label ><b>Username</b></label>
+    <input [(ngModel)]="username" type="text" placeholder="Enter Username" name="uname" required>
+
+    <label ><b>Password</b></label>
+    <input [(ngModel)]="password" type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" (click)="submit()">Register</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+</form>
